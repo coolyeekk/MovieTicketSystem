@@ -4,61 +4,58 @@
 
 using namespace std;
 
-int main()
-{
-    string user; int selection = -1;
-    cout << "\n       Enter your name: ";
-    cin >> (user);
 
-    movies funcmovies;
+string rated [5] = {"R-18", "R-16", "R-13", "R-18", "R-18"};
+string MovieTitle [5] = {"Otlum", "Her", "Him", "Grudge", "White Lady"};
+int price [5] = {400, 350, 300, 450, 360};
 
-    while (selection < 0){
-        system("CLS");
-        cout << "\n       Hi " + user + "! Thank you for choosing the Movie Ticket System: A place for your movie ticket needs!" << endl;
-        cout << "\n       !: Please select your transaction below. " << endl;
-        cout << "\n          [1] Show List of All Movies.";
-        cout << "\n          [2] Check/Edit Ticket status.";
-        cout << "\n          [0] Exit." << endl;
 
-        cout << "\n       Type here: "; cin >> selection;
 
-        switch (selection){
-        case 1:
-            funcmovies.listOfAllMovies();
-            break;
-        case 2:
-            system("CLS");
-            int option;
-            cout << "\n       What would you like to do " + user + "?" << endl;
-            cout << "\n       1. Check Ticket Status";
-            cout << "\n       2. Edit Ticket Details";
-            cout << "\n       3. Cancel Ticket";
-            cout << "\n       0. Return to Menu." << endl;
-            cout << "\n       Type here: "; cin >> option;
+void movieAvailable(){
 
-            switch (option){
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 0:
-                selection = -1;
-                break;
-            default:
-                break;
-            }
+        int counter = 1;
 
-            break;
-        case 0:
-            cout << "\n       Thank you for trusting Movie Ticket System. See you next time!";
-            selection = 0;
-            break;
-        default:
-            break;
-        }
-    }
-    return 0;
+            cout << "                                 --------------------------------------------------------------\n";
+            cout << "                                |                  Movies that are now showing                  |\n";
+            cout << "                                 --------------------------------------------------------------\n";
+
+        for (int x=0; x<5;x++){
+            if (price[x]!=0){
+
+            cout<<"                                                    #"<<counter<<"                            \n";
+            cout<<"                                                       Title:"<<MovieTitle[x]<<"               \n";
+            cout<<"                                                       Price:"<<price[x]<<"                    \n";
+            cout<<"                                                       Rating:"<<rated[x]<<"                   \n";
+            cout<<"                                  --------------------------------------------------------------\n";
+        counter++;
+}
+}
 }
 
+int main()
+{
+string name;
+int choice;
+
+    do{
+        system ("cls");
+            cout << "                                               ----------------------------------\n";
+            cout << "                                              |  Welcome to Movie Ticket System   |                   \n";
+            cout << "                                               ----------------------------------\n";
+
+            cout << "                                                                                             \n";
+            movieAvailable();
+            cout<<  "                                  ______________________________________________________________\n";
+            cout<<  "                                ||                   What would you like to do?                 ||\n";
+            cout<<  "                                || [1] SHOW MOVIE INFORMATION      [4] CANCEL RESERVED TICKET   ||\n";
+            cout<<  "                                || [2] BOOK A TICKET               [5] CONTACT US               ||\n";
+            cout << "                                || [3] SHOW RESERVED TICKET        [6] EXIT                     ||\n";
+            cout<<  "                                  ______________________________________________________________  \n";
+            cout<<  "                                                                                               \n";
+            cout<<  "                                             Please enter your desired transaction: ";
+            cin >> choice;
+
+    return 0;
+}
+while(choice!=6);
+}

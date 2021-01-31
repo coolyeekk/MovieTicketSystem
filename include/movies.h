@@ -12,6 +12,7 @@ class movies
         movies();
         virtual ~movies();
         void listOfAllMovies();
+        void movieAvailable();
 
     protected:
 

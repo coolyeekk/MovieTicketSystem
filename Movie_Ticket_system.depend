@@ -18,12 +18,12 @@
 	<iostream>
 	<string>
 
-1612075231 source:c:\users\shellamie akmad\documents\github\movieticketsystem\main.cpp
+1612079676 source:c:\users\shellamie akmad\documents\github\movieticketsystem\main.cpp
 	<iostream>
 	<string>
 	"movies.h"
 
-1612075231 c:\users\shellamie akmad\documents\github\movieticketsystem\include\movies.h
+1612078669 c:\users\shellamie akmad\documents\github\movieticketsystem\include\movies.h
 	<iostream>
 	<string>
 
@@ -33,4 +33,7 @@
 1612075231 c:\users\shellamie akmad\documents\github\movieticketsystem\include\tickets.h
 	<iostream>
 	<string>
+
+1612079534 source:c:\users\shellamie akmad\documents\github\movieticketsystem\src\movies.cpp
+	"movies.h"
 
