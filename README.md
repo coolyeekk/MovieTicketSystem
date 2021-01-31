@@ -23,9 +23,12 @@ git pull
 ```
   - Alternatively, on **Github Desktop :** click on ``Fetch origin``. If there is an update, click on ``Pull origin``.
 
-4. Create **your own branch** from ``final`` branch as base. Replace ``<branchname>`` with the name of **your choosing (example: your surname)**.
+4. Create **your own branch** from ``final`` branch as base. <br>
+Replace ``<branchname>`` with the name of **your choosing (example: your surname)**.
 ```vim
 git checkout -b <branchname>
+```
+```vim
 git push origin <branchname>
 ```
   - Alternatively, on **Github Desktop :** click on the **Branches Dropdown**, and clicking on ``New branch``.
@@ -47,4 +50,4 @@ Replace ``<branchname>`` with the name of the branch from ``Step #4``.
 git branch -d <branchname>
 ```
 
-10. Go back to ``Step 1``.
+10. Go back to ``Step #1``.
