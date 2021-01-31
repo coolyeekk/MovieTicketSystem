@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1611938017 source:d:\admin\documents\movie_ticket_system\main.cpp
+	<iostream>
+	<string>
+	"movies.h"
+
+1611937417 source:d:\admin\documents\movie_ticket_system\src\movies.cpp
+	"movies.h"
+
+1611936761 d:\admin\documents\movie_ticket_system\include\movies.h
+	<iostream>
+	<string>
+
+1611938114 source:d:\admin\documents\movie_ticket_system\src\tickets.cpp
+	"tickets.h"
+
+1611938079 d:\admin\documents\movie_ticket_system\include\tickets.h
+	<iostream>
+	<string>
+
