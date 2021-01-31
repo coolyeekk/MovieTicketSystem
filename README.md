@@ -16,6 +16,7 @@ git checkout final
 ```vim
 git reset --hard
 ```
+  - Alternatively, on **Github Desktop :** highlight all files on the **Left side**, right-click, and select ``Discard <number of files> selected changes...``
 
 3. **Pull** updates from **origin**.
 ```vim
@@ -42,6 +43,7 @@ git push origin <branchname>
 7. Click on ``Push origin``, to upload changes to main repository.
 
 8. Make a **PR (Pull Request)** to integrate changes to ``final`` branch.
+  - Do this via the **Github repository link**., **OR** message Repo owner to do the PR.
   - Wait for the PR to be approved and merged.
   
 9. Delete **your local branch**. **Note: This is OK to do since all the changes have been uploaded already)**. <br>
